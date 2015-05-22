@@ -1,0 +1,292 @@
+﻿@{
+    ViewBag.Title = "Projection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #body-content {
+        padding-top: 40px;
+    }
+</style>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button class="btn btn-navbar" data-toggle="collapse" data-target="#app-nav-top-bar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="@Url.Action("Index", "Home")" class="brand "><i class="fa fa-users"> </i> JGAssistant</a>
+            <div id="app-nav-top-bar" class="nav-collapse">
+                <ul class="nav">
+                    <li class="dropdown flip-li">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa  fa-anchor "> </i>&nbsp; Solicitudes de embarques
+                            <b class="caret hidden-phone"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Activas</a>
+                            </li>
+                            <li>
+                                <a href="#">Procesadas</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown flip-li">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa  fa-table "> </i>&nbsp;Proyecciones semanales
+                            <b class="caret hidden-phone"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                @Html.ActionLink("Actual", "Projection", "Projection")
+                            </li>
+                            <li>
+                                <a href="#">Anteriores</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown flip-li">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa  fa-line-chart "> </i>&nbsp;Reportes
+                            <b class="caret hidden-phone"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Navieras</a>
+                            </li>
+                            <li>
+                                <a href="#">Destinos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown flip-li">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa  fa-wrench"> </i>&nbsp;Mantenimientos
+                            <b class="caret hidden-phone"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Navieras</a>
+                            </li>
+                            <li>
+                                <a href="#">Agencias Aduanales Nacionales</a>
+                            </li>
+                            <li>
+                                <a href="#">Consignatarios</a>
+                            </li>
+                            <li>
+                                <a href="#">Agencias Aduanales Exteriores</a>
+                            </li>
+                            <li>
+                                <a href="#">Suplidores</a>
+                            </li>
+                            <li>
+                                <a href="#">Embarcador</a>
+                            </li>
+                            <li>
+                                <a href="#">Destinos</a>
+                            </li>
+                            <li>
+                                <a href="#">Puertos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="  flip-li">
+                        <a href="#"><i class="fa fa-life-ring"> </i>&nbsp;Ayuda</a>
+                    </li>
+                </ul>
+
+                <ul class="nav pull-right flip-li">
+                    <li>
+                        @Html.ActionLink("Cerrar Sesión", "Login", "Account")
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="body-container">
+    <div id="body-content">
+        <div class="body-nav body-nav-vertical body-nav-fixed">
+            <div class="container">
+                <ul>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-truck icon-large"></i> Nueva solicitud
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-ship icon-large"></i> Intrucciones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-certificate icon-large"></i> ISF
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <section class="nav nav-page">
+            <div class="container">
+                <div class="row">
+                    <div class="span7">
+                        <header class="page-header">
+                            <h3>
+                                Proyección actual
+                            </h3>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page container">
+            <div class="row">
+                <div class="span20">
+                    <div class="row">                                                     
+                        <div class="span16">
+                            <div class="box pattern pattern-sandstone">
+                                <div class="box-header">
+                                    <i class="icon-table"></i>
+                                    <h5>Tabla de Proyección</h5>
+                                </div>
+                                <div class="box-content box-table">
+                                    <table id="sample-table" class="table table-hover table-bordered tablesorter">
+                                        <thead>
+                                            <tr>
+                                                <th>Viva</th>
+                                                <th>Saprissa</th>
+                                                <th>Es el</th>
+                                                <th>Equipo</th>
+                                                <th>Que la</th>
+                                                <th>Toca</th>
+                                                <th class="td-actions"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <script type="text/javascript">
+                                                        function invierte() {
+                                                            C1.disabled = !C1.disabled;
+                                                            alert("Pinche cochi wey");
+                                                        }
+                                                    </script>
+
+                                                    <input id="C1" enable="true" onclick="invierte()">
+                                                </td>
+                                                <td>
+                                                    Internet
+                                                    Explorer
+                                                </td>
+                                                <td>7.0</td>
+                                                <td>7.0</td>
+                                                <td>7.0</td>
+                                                <td>7.0</td>
+                                                <td class="td-actions">
+                                                    <a href="javascript:;" class="btn btn-small btn-info">
+                                                        <i class="btn-icon-only icon-ok"></i>
+                                                    </a>
+
+                                                    <a href="javascript:;" class="btn btn-small btn-danger">
+                                                        <i class="btn-icon-only icon-remove"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4.0</td>
+                                                <td>Firefox</td>
+                                                <td>7.0</td>
+                                                <td>7.0</td>
+                                                <td>7.0</td>
+                                                <td>7.0</td>
+                                                <td class="td-actions">
+                                                    <a href="javascript:;" class="btn btn-small btn-info">
+                                                        <i class="btn-icon-only icon-ok"></i>
+                                                    </a>
+
+                                                    <a href="javascript:;" class="btn btn-small btn-danger">
+                                                        <i class="btn-icon-only icon-remove"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+ </div>
+<footer class="application-footer">
+    <div class="container">
+        <p>Información Legal Del Sitio</p>
+        <div class="disclaimer">
+            <p>© JarvisGeek S.A. Todos los derechos reservados. 2015</p>
+            <div id="app-nav-top-bar" class="nav-collapse">
+                <ul class="menu-footer">
+                    <li>
+                        <a href="#">Términos de uso</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de privacidad y cookies</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos de pago</a>
+                    </li>
+                    <li>
+                        <a href="#">Acerca de este sitio</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="~/Content/js/bootstrap/bootstrap-alert.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-modal.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-dropdown.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-scrollspy.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-tab.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-tooltip.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-popover.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-button.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-collapse.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-carousel.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-typeahead.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-affix.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="~/Content/js/jquery/jquery-tablesorter.js" type="text/javascript"></script>
+<script src="~/Content/js/jquery/jquery-chosen.js" type="text/javascript"></script>
+<script src="~/Content/js/jquery/virtual-tour.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+        $(function() {
+            $('#sample-table').tablesorter();
+            $('#datepicker').datepicker();
+            $(".chosen").chosen();
+        });
+</script>
