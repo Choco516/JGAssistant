@@ -148,6 +148,7 @@
     <Content Include="Content\assets\css\customize-template.css" />
     <Content Include="Content\assets\css\glyphicons-halflings-white.png" />
     <Content Include="Content\assets\css\glyphicons-halflings.png" />
+    <Content Include="Content\assets\css\multistep.css" />
     <Content Include="Content\assets\css\rhinoslider-1.05.css" />
     <Content Include="Content\assets\font-awesome-4.3.0\css\font-awesome.css" />
     <Content Include="Content\assets\font-awesome-4.3.0\css\font-awesome.min.css" />
@@ -155,6 +156,7 @@
     <Content Include="Content\js\jquery\easing.js" />
     <Content Include="Content\js\jquery\jquery.min.js" />
     <Content Include="Content\js\jquery\mousewheel.js" />
+    <Content Include="Content\js\jquery\multistep.js" />
     <Content Include="Content\js\jquery\rhinoslider-1.05.js" />
     <Content Include="Content\js\jquery\rhinoslider-1.05.min.js" />
     <Content Include="img\account-details.png" />

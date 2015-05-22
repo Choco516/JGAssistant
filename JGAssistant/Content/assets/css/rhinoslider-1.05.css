@@ -90,7 +90,6 @@
     padding:0;
     float:left;
     margin-left: 12%;
-
 }
 
 /*changed*/
@@ -134,7 +133,7 @@
     -webkit-user-select:none;
     -moz-user-select:none;
     user-select:none;
-    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Arial, "Helvetica Neue", sans-serif;
     font-size:13px;
 }
 
