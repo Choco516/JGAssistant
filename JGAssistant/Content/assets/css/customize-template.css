@@ -2765,6 +2765,7 @@ table [class*=span],
 
 .well-anchor-Dashboard {
     width:94%;
+    margin-left:4%;
 }
 .well blockquote {
   border-color: #ddd;
