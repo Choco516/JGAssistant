@@ -2752,9 +2752,20 @@ table [class*=span],
 }
 
 .well-anchor {
-    width:94.7%;
+    width:100%;
+    margin-top: 5%;
+    margin-left: -5%;
+    margin-bottom: 5%;
+    background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
 }
 
+.well-anchor-Dashboard {
+    width:94%;
+}
 .well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
@@ -7877,6 +7888,15 @@ body > #body-container {
   font-size: 11px;
   color: #999999;
 }
+
+.solicitud {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
 .box {
   margin-bottom: 20px;
   margin-left: 10px;

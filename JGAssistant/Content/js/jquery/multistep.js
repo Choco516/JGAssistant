@@ -4,21 +4,21 @@
             showControls: 'always',
             showBullets: 'always',
             controlsMousewheel: false,
-            prevText: 'Back',
-            nextText: 'Proceed',
+            prevText: 'Anterior',
+            nextText: 'Siguiente',
             slidePrevDirection: 'toRight',
             slideNextDirection: 'toLeft'
         });
 
 
         $(".rhino-prev").hide();
-        $('.rhino-next').after('<a class="form-submit" href="javascript:void(0);" >Proceed</a>');
+        $('.rhino-next').after('<a class="form-submit" href="javascript:void(0);" >Siguiente</a>');
         $(".rhino-next").hide();
 
 
 
 
-        var info = ["Detalles de naviera", "ACCOUNT DETAILS", "CONTACT DETAILS", "Hola xD"];
+        var info = ["Detalles de naviera", "Detallles del contenedor", "Detalles de posicionamiento", "Detalles de partes"];
         $('.rhino-bullet').each(function (NewBooking) {
             $(this).html('<p style="margin: 0pt; font-size: 13px; font-weight: bold;"></p><p class="bullet-desc">' + info[NewBooking] + '</p></a>');
         });
