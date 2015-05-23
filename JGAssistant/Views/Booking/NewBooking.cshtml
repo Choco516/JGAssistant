@@ -164,19 +164,19 @@
         <section class="page container">
             <div class="row">
                 <div class="span16">
-                    <div class="well well-small well-shadow well-anchor">
+                    <div class="well-anchor">
                         <form action="">
                             <div id="slider">
                                 <div class="form-step">
                                     <div class="titlemultistep">
-                                        Configure los detalles de naviera
+                                        <legend>Configure los detalles de naviera</legend>
                                     </div>
-                                    <div>
+                                    <div class="solicitud span7">
                                         <div>
                                             <div class="row">
                                                 <div class="form-left">Naviera *</div>
                                                 <div class="form-right">
-                                                    <select class="chosen span4" data-placeholder="Seleccione la naviera">
+                                                    <select class="chosen span3" data-placeholder="Seleccione la naviera" required>
                                                         <option value=""></option>
                                                         <option value="King Ocean">King Ocean</option>
                                                         <option value="Crowley">Crowley</option>
@@ -190,7 +190,7 @@
                                             </div>
                                             <div class="row">
                                                 <div class="form-left">Destino *</div>
-                                                <select class="chosen span4" data-placeholder="Seleccione el destino">
+                                                <select class="chosen span3" data-placeholder="Seleccione el destino">
                                                     <option value=""></option>
                                                     <option value="United States">California</option>
                                                     <option value="United Kingdom">Philadelphia</option>
@@ -200,24 +200,71 @@
                                             </div>
                                             <div class="row">
                                                 <div class="form-left">Barco *</div>
-                                                <div class="form-right">
-                                                    <div class="form-right"><input type="text" id="username" name="username" class="form-input" /></div>
+                                                <div class="form-right ">
+                                                    <div class="form-right"><input type="text" id="username" name="username" class="form-input span3" /></div>
                                                 </div>
                                                 <div class="form-error"></div>
                                             </div>
                                             <div class="row">
                                                 <div class="form-left">Consecutivo *</div>
-                                                <div class="form-right"><input type="text" id="username" name="username" class="form-input" /></div>
+                                                <div class="form-right"><input type="text" id="username" name="username" class="form-input span3" /></div>
                                                 <div class="form-error"></div>
                                             </div>
                                             <div class="row">
                                                 <div class="form-left">Contacto *</div>
-                                                <select class="chosen span4" data-placeholder="Seleccione el contacto">
+                                                <select class="chosen span3" data-placeholder="Seleccione el contacto">
                                                     <option value=""></option>
                                                     <option value="United States">Alvaro</option>
                                                     <option value="United Kingdom">Mike</option>
                                                     <option value="Afghanistan">Freddy</option>
                                                     <option value="Afghanistan">Mano</option>
+                                                </select>
+                                                <div class="form-error"></div>
+                                            </div>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="solicitud span7">
+                                        <div>
+                                            <div class="row">
+                                                <div class="form-left">Origen *</div>
+                                                <div class="form-right">
+                                                    <select class="chosen span3" data-placeholder="Seleccione el origen" required>
+                                                        <option value=""></option>
+                                                        <option value="Pital">Pital</option>
+                                                        <option value="Sarapiqui">Sarapiqui</option>
+                                                        <option value="Guapiles">Guapiles</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-error"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-left">Puerto de salida *</div>
+                                                <select class="chosen span3" data-placeholder="Seleccione el puerto de salida">
+                                                    <option value=""></option>
+                                                    <option value="PTO Limón">PTO Limón</option>
+                                                    <option value="PTO Caldera">PTO Caldera</option>
+                                                </select>
+                                                <div class="form-error"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-left">Puerto de entrada *</div>
+                                                <select class="chosen span3" data-placeholder="Seleccione el puerto de entrada">
+                                                    <option value=""></option>
+                                                    <option value="Miami">Miami</option>
+                                                    <option value="Freeport">Freeport</option>
+                                                    <option value="Wilmington">Wilmington</option>
+                                                </select>
+                                                <div class="form-error"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-left">Destino final *</div>
+                                                <select class="chosen span3" data-placeholder="Seleccione el destino final">
+                                                    <option value=""></option>
+                                                    <option value="LA">LA</option>
+                                                    <option value="NY">NY</option>
                                                 </select>
                                                 <div class="form-error"></div>
                                             </div>
@@ -235,7 +282,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-left">Password *</div>
-                                        <div class="form-right"><input type="text" id="pass" name="pass" class="form-input" /></div>
+                                        <div class="form-right "><input type="text" id="pass" name="pass" class="form-input " /></div>
                                         <div class="form-error"></div>
                                     </div>
                                     <div class="row">
