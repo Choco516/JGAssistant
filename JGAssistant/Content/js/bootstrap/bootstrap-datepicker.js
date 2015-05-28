@@ -32,11 +32,10 @@
 
     var Datepicker = function(element, options) {
         var that = this;
-
         this.element = $(element);
-        this.language = options.language||this.element.data('date-language')||"en";
-        this.language = this.language in dates ? this.language : "en";
-        this.format = DPGlobal.parseFormat(options.format||this.element.data('date-format')||'mm/dd/yyyy');
+        this.language = options.language||this.element.data('date-language')||"es";
+        this.language = this.language in dates ? this.language : "es";
+        this.format = DPGlobal.parseFormat(options.format||this.element.data('date-format')||'dd/mm/yyyy');
         this.picker = $(DPGlobal.template)
             .appendTo('body')
             .on({
@@ -659,7 +658,15 @@
             months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
             monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             today: "Today"
-        }
+        },
+        es: {
+        days: ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado", "Domingo"],
+        daysShort: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab", "Dom"],
+        daysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa", "Do"],
+        months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+        monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+        today: "Hoy"
+}
     }
 
     var DPGlobal = {
