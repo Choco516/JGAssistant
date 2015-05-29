@@ -8,10 +8,12 @@ using JGAssistant.Models;
 
 namespace JGAssistant.Controllers
 {
+    
     public class AccountController : Controller
     {
         //
         // GET: /Account/
+        OracleConnection oracc;
         private string nombre;
         private string contrasena;
 

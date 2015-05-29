@@ -6,22 +6,37 @@
         color: black;
         line-height: 20px;
         font-size: 20px ;
-        padding-bottom: 20px;
+        margin-top:-3%;
         font-family: Arial, "Helvetica Neue bold", sans-serif;
         font-weight: bold;
     }
 
     .solicitud {
-        margin-bottom: 20px;
+        margin-top: 2%;
+        margin-bottom: -1.5%;
         margin-left: 15px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
+        display:inline;
+        float:left;
     }
 
-    .sectionms{
-
+    .solicitudchk {
+        float:left;
+        width:100%;
+        margin-top:1%;
+        margin-bottom: -1%;
     }
+
+    .hr {
+        float:left;
+        width:85%;
+        margin-top: 2%;
+        margin-bottom: -1%;
+        border-bottom-color:#111111;
+    }
+    
 
     #wrapper {
         border: 1px solid #DCDADA;
