@@ -1,6 +1,7 @@
  $(document).ready(function () {
         $('#slider').rhinoslider({
             controlsPlayPause: false,
+            controlsKeyboard: false,
             showControls: 'always',
             showBullets: 'always',
             controlsMousewheel: false,

@@ -1428,6 +1428,7 @@ input[type="file"] {
   /* For IE7, add top margin to align select with labels */
 
   line-height: 30px;
+  
 }
 select {
   width: 220px;
