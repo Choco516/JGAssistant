@@ -50,12 +50,40 @@
 
             var err = 0;
 
-            if ($('#fname').val() == '') {
-                $('#fname').parent().parent().find('.form-error').html("First Name is Required");
+            if ($('#naviera').val() == '') {
+                $('#naviera').parent().parent().find('.form-error').html("*");
                 err++;
             }
-            if ($('#lname').val() == '') {
-                $('#lname').parent().parent().find('.form-error').html("Last Name is Required");
+            if ($('#destino').val() == '') {
+                $('#destino').parent().parent().find('.form-error').html("*");
+                err++;
+            }
+            if ($('#barco').val() == '') {
+                $('#barco').parent().parent().find('.form-error').html("*");
+                err++;
+            }
+            if ($('#consecutivo').val() == '') {
+                $('#consecutivo').parent().parent().find('.form-error').html("*");
+                err++;
+            }
+            if ($('#contacto').val() == '') {
+                $('#contacto').parent().parent().find('.form-error').html("*");
+                err++;
+            }
+            if ($('#origen').val() == '') {
+                $('#origen').parent().parent().find('.form-error').html("*");
+                err++;
+            }
+            if ($('#ptoSalida').val() == '') {
+                $('#ptoSalida').parent().parent().find('.form-error').html("*");
+                err++;
+            }
+            if ($('#ptoEntrada').val() == '') {
+                $('#ptoEntrada').parent().parent().find('.form-error').html("*");
+                err++;
+            }
+            if ($('#destinoFinal').val() == '') {
+                $('#destinoFinal').parent().parent().find('.form-error').html("*");
                 err++;
             }
             if ($('#gender').val() == '0') {
@@ -77,12 +105,12 @@
         var step2_validation = function () {
             var err = 0;
 
-            if ($('#username').val() == '') {
-                $('#username').parent().parent().find('.form-error').html("Username is Required");
+            if ($('#mercancia').val() == '') {
+                $('#mercancia').parent().parent().find('.form-error').html("*");
                 err++;
             }
-            if ($('#pass').val() == '') {
-                $('#pass').parent().parent().find('.form-error').html("Password is Required");
+            if ($('#contenedores').val() == '') {
+                $('#contenedores').parent().parent().find('.form-error').html("*");
                 err++;
             }
             if ($('#cpass').val() == '') {
