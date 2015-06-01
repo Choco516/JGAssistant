@@ -114,6 +114,17 @@ textarea {
   content: "";
   line-height: 0;
 }
+
+.plantaAdisional {
+    margin-top:1.9%;
+}
+.plantaAdisional-input{
+    height: 0.88%;
+}
+
+.btn-nuevaplanta {
+    margin-top:15%;
+}
 .clearfix:after {
   clear: both;
 }
@@ -2067,7 +2078,7 @@ select:focus:required:invalid:focus {
 .input-prepend .add-on {
   display: inline-block;
   width: auto;
-  height: 15px;
+  height: 20px;
   min-width: 16px;
   padding: 4px 5px;
   font-size: 14px;

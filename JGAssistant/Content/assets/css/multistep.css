@@ -192,8 +192,7 @@
 
     .form-error {
         color: red;
-        font-size: 12px;
-        padding: 8px;
+        font-size: 25px;
     }
 
     .step-error {
