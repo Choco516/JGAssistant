@@ -29,26 +29,230 @@
                 <div class="span16">
                     <div class="well well-small well-shadow well-anchor-Dashboard ">
                         <div class="box-header">
-                            <button type="submit" class="btn btn-primary pull-left">
+
+                            <!--***************************************-->
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
                                 <i class="fa fa-plus-square fa-lg"></i>
                                 &nbsp;Nueva naviera
                             </button>
                             </br>
                             </br>
 
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog" style="width: 80%; margin-left: -40%;">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Nueva naviera</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="ventana">
+                                                    <div class="nuevo span2">
+                                                        <div class="row2">
+                                                            <div class="form-left letra" >Nombre *</div>
+                                                            <div class="form-right">
+                                                                <input class="blockInput form-input span3" type="text" required>
+                                                            </div>
+                                                            <div class="form-error"></div>
+                                                        </div>
+
+                                                        <div class="row2">
+                                                            <div class="form-left letra">Dirección *</div>
+                                                            <div class="form-right"> <input class="span3 blockInput" type="text" required></div>
+                                                        </div>
+                                                    </div>
+                                                        <div class="nuevo span2">
+                                                            <div class="row2">
+                                                                <div class="form-left letra">País *</div>
+                                                                <div class="form-right">
+                                                                    <select id="pais1" class="chosen span3" data-placeholder="Seleccione el país" required>
+                                                                        <option value=""></option>
+                                                                        <option value="Costa Rica">Costa Rica</option>
+                                                                        <option value="EEUU">EEUU</option>
+                                                                        <option value="Brasil">Brasil</option>
+                                                                        <option value="Argentina">Argentina</option>
+                                                                        <option value="Francia">Francia</option>
+                                                                        <option value="Italia">Italia</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row2">
+                                                                <div class="form-left letra">Correo *</div>
+                                                                <div class="form-right"><input class="span3 blockInput" type="email" required></div>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    <div class="nuevo span2">
+                                                        <div class="row2">
+                                                            <div class="form-left letra">Teléfonos *</div>
+                                                            <div class="form-right"><input class="span3 blockInput" type="tel" placeholder="Teléfono 1" required></div>
+                                                            <div class="form-right"><input class="span3 blockInput" type="tel" placeholder="Teléfono 2" required></div>
+                                                            <div class="form-right"><input class="span3 blockInput" type="tel" placeholder="Teléfono 3" required></div>
+                                                        </div>
+                                                    </div>
+                                                    <button id="guardarnav" type="button" class="btn btn-info button-right">Guardar</button>
+                                                </div>
+                                                <hr class="hrnuevo">
+                                                <div id="divnuevocont" hidden>
+                                                    <div class="ventana2">
+                                                        <div>
+                                                            <h4>Nuevo Contacto</h4>
+                                                        </div>
+                                                        <div class="nuevo2">
+                                                            <div class="row2">
+                                                                <div class="letra">Nombre:</div>
+                                                                <div><input class="span3" type="text" required></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nuevo2">
+                                                            <div class="row2">
+                                                                <div class="letra">Correos:</div>
+                                                                <div><input class="span3" type="email" placeholder="Correo 1" required></div>
+                                                                <div><input class="span3" type="email" placeholder="Correo 2" required></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nuevo2">
+                                                            <div class="row2">
+                                                                <div class="letra">Teléfonos:</div>
+                                                                <div><input class="span3" type="tel" placeholder="Teléfono 1" required></div>
+                                                                <div><input class="span3" type="tel" placeholder="Teléfono 2" required></div>
+                                                            </div>
+                                                        </div>
+                                                        <button id="guardarcont" type="button" class="btn btn-info button-right">Guardar</button>
+                                                    </div>
+                                                </div>
+                                                <div id="divtablacont" hidden>
+                                                    <div class="ventana">
+                                                        </br>
+                                                        <div class="box pattern pattern-sandstone">
+                                                            <button id="nuevocont" type="button" class="btn btn-info btn-lg">
+                                                                <i class="fa fa-plus-square fa-lg"></i>
+                                                                &nbsp;Nuevo contacto
+                                                            </button>
+                                                            <div class="box-header">
+                                                                <i class="icon-list-alt"></i>
+                                                                <h5>
+                                                                    Lista de contactos
+                                                                </h5>
+                                                            </div>
+                                                            <div class="box-content box-table">
+                                                                <table id="sample-table" class="table table-hover table-bordered tablesorter">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="header headerSortUp">Nombre</th>
+                                                                            <th class="header">Telefono</th>
+                                                                            <th class="header">Correo</th>
+                                                                            <th class="td-actions">Acciones</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Douglas Sequeira</td>
+                                                                            <td>11111111</td>
+                                                                            <td>asd@gmail.com</td>
+                                                                            <td class="td-actions">
+                                                                                <a href="javascript:;" class="btn btn-small btn-info" title="Editar">
+                                                                                    <i class="btn-icon-only fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-small btn-info" title="Detalles">
+                                                                                    <i class="btn-icon-only fa fa-info-circle"></i>
+                                                                                </a>
+
+                                                                                <a href="javascript:;" class="btn btn-small btn-danger" title="Borrar">
+                                                                                    <i class="btn-icon-only icon-remove"></i>
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Harold Wallace</td>
+                                                                            <td>11111111</td>
+                                                                            <td>asd@gmail.com</td>
+                                                                            <td class="td-actions">
+                                                                                <a href="javascript:;" class="btn btn-small btn-info" title="Editar">
+                                                                                    <i class="btn-icon-only fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-small btn-info" title="Detalles">
+                                                                                    <i class="btn-icon-only fa fa-info-circle"></i>
+                                                                                </a>
+
+                                                                                <a href="javascript:;" class="btn btn-small btn-danger" title="Borrar">
+                                                                                    <i class="btn-icon-only icon-remove"></i>
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Juan Bautista Ezquivel</td>
+                                                                            <td>11111111</td>
+                                                                            <td>asd@gmail.com</td>
+                                                                            <td class="td-actions">
+                                                                                <a href="javascript:;" class="btn btn-small btn-info" title="Editar">
+                                                                                    <i class="btn-icon-only fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-small btn-info" title="Detalles">
+                                                                                    <i class="btn-icon-only fa fa-info-circle"></i>
+                                                                                </a>
+
+                                                                                <a href="javascript:;" class="btn btn-small btn-danger" title="Borrar">
+                                                                                    <i class="btn-icon-only icon-remove"></i>
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Max Sanchez</td>
+                                                                            <td>11111111</td>
+                                                                            <td>asd@gmail.com</td>
+                                                                            <td class="td-actions">
+                                                                                <a href="javascript:;" class="btn btn-small btn-info" title="Editar">
+                                                                                    <i class="btn-icon-only fa fa-pencil-square-o"></i>
+                                                                                </a>
+                                                                                <a href="javascript:;" class="btn btn-small btn-info" title="Detalles">
+                                                                                    <i class="btn-icon-only fa fa-info-circle"></i>
+                                                                                </a>
+
+                                                                                <a href="javascript:;" class="btn btn-small btn-danger" title="Borrar">
+                                                                                    <i class="btn-icon-only icon-remove"></i>
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                   
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            <!--***************************************-->
+
                             <div class="box pattern pattern-sandstone">
                                 <div class="box-header">
-                                    <i></i>
+                                    <i class="icon-list-alt"></i>
+                                    <h5>
+                                        Lista de navieras
+                                    </h5>
                                 </div>
                                 <div class="box-content box-table">
-                                    <table id="sample-table" class="table table-hover table-bordered tablesorter">
+                                    <table id="sample-table1" class="table table-hover table-bordered tablesorter">
                                         <thead>
                                             <tr>
                                                 <th class="header headerSortUp">Nombre</th>
                                                 <th class="header">Dirección</th>
                                                 <th class="header">Telefono 1</th>
                                                 <th class="header">Telefono 2</th>
-                                                <th class="header">Telefono 3</th>
+                                                <th class="header">Correo</th>
                                                 <th class="td-actions">Acciones</th>
                                             </tr>
                                         </thead>
@@ -58,19 +262,16 @@
                                                 <td>1En los barrios bajos</td>
                                                 <td>11111111</td>
                                                 <td>22222222</td>
-                                                <td>33333333</td>
+                                                <td>a@gmail.com</td>
                                                 <td class="td-actions">
-                                                    <a href="javascript:;" class="btn btn-small btn-info">
+                                                    <a href="javascript:;" class="btn btn-small btn-info" title="Editar">
                                                         <i class="btn-icon-only fa fa-pencil-square-o"></i>
                                                     </a>
-                                                    <a href="javascript:;" class="btn btn-small btn-info">
-                                                        <i class="btn-icon-only fa fa-file-text-o"></i>
-                                                    </a>
-                                                    <a href="javascript:;" class="btn btn-small btn-info">
+                                                    <a href="javascript:;" class="btn btn-small btn-info" title="Detalles">
                                                         <i class="btn-icon-only fa fa-info-circle"></i>
                                                     </a>
 
-                                                    <a href="javascript:;" class="btn btn-small btn-danger">
+                                                    <a href="javascript:;" class="btn btn-small btn-danger" title="Borrar">
                                                         <i class="btn-icon-only icon-remove"></i>
                                                     </a>
                                                 </td>
@@ -80,13 +281,16 @@
                                                 <td>En los barrios bajos</td>
                                                 <td>11111111</td>
                                                 <td>22222222</td>
-                                                <td>33333333</td>
+                                                <td>a@gmail.com</td>
                                                 <td class="td-actions">
-                                                    <a href="javascript:;" class="btn btn-small btn-info">
-                                                        <i class="btn-icon-only fa fa-pencil"></i>
+                                                    <a href="javascript:;" class="btn btn-small btn-info" title="Editar">
+                                                        <i class="btn-icon-only fa fa-pencil-square-o"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="btn btn-small btn-info" title="Detalles">
+                                                        <i class="btn-icon-only fa fa-info-circle"></i>
                                                     </a>
 
-                                                    <a href="javascript:;" class="btn btn-small btn-danger">
+                                                    <a href="javascript:;" class="btn btn-small btn-danger" title="Borrar">
                                                         <i class="btn-icon-only icon-remove"></i>
                                                     </a>
                                                 </td>
@@ -96,13 +300,16 @@
                                                 <td>2En los barrios bajos</td>
                                                 <td>11111111</td>
                                                 <td>22222222</td>
-                                                <td>33333333</td>
+                                                <td>a@gmail.com</td>
                                                 <td class="td-actions">
-                                                    <a href="javascript:;" class="btn btn-small btn-info">
-                                                        <i class="btn-icon-only fa fa-pencil"></i>
+                                                    <a href="javascript:;" class="btn btn-small btn-info" title="Editar">
+                                                        <i class="btn-icon-only fa fa-pencil-square-o"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="btn btn-small btn-info" title="Detalles">
+                                                        <i class="btn-icon-only fa fa-info-circle"></i>
                                                     </a>
 
-                                                    <a href="javascript:;" class="btn btn-small btn-danger">
+                                                    <a href="javascript:;" class="btn btn-small btn-danger" title="Borrar">
                                                         <i class="btn-icon-only icon-remove"></i>
                                                     </a>
                                                 </td>
@@ -112,13 +319,16 @@
                                                 <td>3En los barrios bajos</td>
                                                 <td>11111111</td>
                                                 <td>22222222</td>
-                                                <td>33333333</td>
+                                                <td>a@gmail.com</td>
                                                 <td class="td-actions">
-                                                    <a href="javascript:;" class="btn btn-small btn-info">
-                                                        <i class="btn-icon-only fa fa-pencil"></i>
+                                                    <a href="javascript:;" class="btn btn-small btn-info" title="Editar">
+                                                        <i class="btn-icon-only fa fa-pencil-square-o"></i>
+                                                    </a>
+                                                    <a href="javascript:;" class="btn btn-small btn-info" title="Detalles">
+                                                        <i class="btn-icon-only fa fa-info-circle"></i>
                                                     </a>
 
-                                                    <a href="javascript:;" class="btn btn-small btn-danger">
+                                                    <a href="javascript:;" class="btn btn-small btn-danger" title="Borrar">
                                                         <i class="btn-icon-only icon-remove"></i>
                                                     </a>
                                                 </td>
@@ -127,7 +337,7 @@
                                     </table>
                                 </div>
                             </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -156,37 +366,34 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </div>
 </footer>
 
-
-<script src="~/Content/js/bootstrap/bootstrap-alert.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-modal.js" type="text/javascript"></script>
 <script src="~/Content/js/bootstrap/bootstrap-dropdown.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-scrollspy.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-tab.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-tooltip.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-popover.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-button.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-collapse.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-carousel.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-typeahead.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-affix.js" type="text/javascript"></script>
-<script src="~/Content/js/bootstrap/bootstrap-datepicker.js" type="text/javascript"></script>
 <script src="~/Content/js/jquery/jquery-tablesorter.js" type="text/javascript"></script>
 <script src="~/Content/js/jquery/jquery-chosen.js" type="text/javascript"></script>
-<script src="~/Content/js/jquery/virtual-tour.js" type="text/javascript"></script>
-<script src="~/Content/js/jquery/easing.js" type="text/javascript"></script>
-<script src="~/Content/js/jquery/mousewheel.js" type="text/javascript"></script>
-<script src="~/Content/js/jquery/rhinoslider-1.05.min.js" type="text/javascript"></script>
+<script src="~/Content/js/jquery/bootstrap.min.js" type="text/javascript"></script>
+<script src="~/Content/js/jquery/bootstrap.min.js" type="text/javascript"></script>
+<script src="~/Content/js/jquery/bootstrap-modal.js" type="text/javascript"></script>
+<script src="~/Content/js/bootstrap/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="~/Content/js/jquery/mantenimiento.js" type="text/javascript"></script>
+
+
+<link type="text/css" rel="stylesheet" href="~/Content/assets/css/mantenimiento.css"/>
+
+
+
+
+
 
 <script type="text/javascript">
     $(function () {
+        $('#sample-table1').tablesorter();
         $('#sample-table').tablesorter();
         $('#datepicker').datepicker();
         $('#datepicker2').datepicker();
         $(".chosen").chosen();
     });
+
     </script>
